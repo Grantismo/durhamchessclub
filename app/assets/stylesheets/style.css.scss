@@ -1039,6 +1039,10 @@
 #puzzle{
   font-family: arial, helvetica, clean, sans-serif;
   font-size: 12px;
+  margin-right: auto;
+  margin-left: auto;
+  display: block;
+  width: 390px;
 }
 
 #puzzle-boardBorder{
@@ -1053,4 +1057,8 @@
   border: 1px solid rgb(124, 128, 129);
   padding: 3px;
   margin: 2px;
+}
+
+#puzzle-ct-nav-container{
+  width: 340px;
 }
