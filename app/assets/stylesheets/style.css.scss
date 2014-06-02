@@ -2,6 +2,8 @@
 @import url("//cdnjs.cloudflare.com/ajax/libs/font-awesome/4.0.3/css/font-awesome.min.css");
 @import url("http://fonts.googleapis.com/css?family=Lato:300,400,900");
 
+$fontColor: #161A1B;
+
 /*
 	Twenty 1.0 by HTML5 UP
 	html5up.net | @n33co
@@ -28,7 +30,7 @@
 	}
 
 	body, input, select, textarea {
-		color: #494D4E;
+		color: $fontColor;
 		font-family: 'Lato', sans-serif;
 		font-size: 15pt;
 		font-weight: 300;
@@ -360,7 +362,7 @@
 			cursor: default;
 			display: block;
 			margin: 0 0 1.5em 0;
-			opacity: 0.35;
+			opacity: 0.90;
 			text-align: center;
 		}
 
@@ -481,7 +483,7 @@
 			}
 
 			table.default thead {
-				background: #494D4E;
+				background: $fontColor;
 				color: #fff;
 			}
 
@@ -870,7 +872,7 @@
 
 	#footer {
 		background: #e8eef4;
-		color: #494D4E;
+		color: $fontColor;
 		padding: 5em 5em 10em 5em;
 		text-align: center;
 	}
@@ -1061,4 +1063,12 @@
 
 #puzzle-ct-nav-container{
   width: 340px;
+}
+
+#logo{
+  width: 300px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 20px;
 }
