@@ -62,3 +62,5 @@ gem 'mini_magick'
 gem 'activeadmin', github: 'gregbell/active_admin'
 gem 'devise'
 
+gem "non-stupid-digest-assets"
+
