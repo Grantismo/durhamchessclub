@@ -14,6 +14,6 @@
 //= require jquery_ujs
 //= require skel.min
 //= require skel-layers.min
-//= require ckeditor/init
 //= require ckeditor/override
+//= require ckeditor/init
 //= require init 
