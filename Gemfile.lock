@@ -15,14 +15,6 @@ GIT
       ransack (~> 1.0)
       sass-rails
 
-GIT
-  remote: git@github.com:galetahub/ckeditor.git
-  revision: 53c7e16c6a3fa457823daaff472621d795d9f81f
-  specs:
-    ckeditor (4.0.11)
-      mime-types
-      orm_adapter (~> 0.5.0)
-
 GEM
   remote: https://rubygems.org/
   specs:
@@ -63,6 +55,9 @@ GEM
       activesupport (>= 3.2.0)
       json (>= 1.7)
       mime-types (>= 1.16)
+    ckeditor (4.0.6)
+      mime-types
+      orm_adapter
     coffee-rails (4.0.1)
       coffee-script (>= 2.2.0)
       railties (>= 4.0.0, < 5.0)
@@ -192,7 +187,7 @@ PLATFORMS
 DEPENDENCIES
   activeadmin!
   carrierwave
-  ckeditor!
+  ckeditor
   coffee-rails (~> 4.0.0)
   devise
   jbuilder (~> 1.2)

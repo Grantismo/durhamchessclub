@@ -55,7 +55,7 @@ end
 # gem 'debugger', group: [:development, :test]
 #
 
-gem "ckeditor", :git => "git@github.com:galetahub/ckeditor.git"
+gem "ckeditor"
 
 gem 'carrierwave'
 gem 'mini_magick'
