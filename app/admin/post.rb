@@ -16,8 +16,14 @@ ActiveAdmin.register Post do
   #
   #
   
+  action_item :only => :show do
+    link_to "Preview Post", post_path(post)
+  end
+  
   index do
-    column :title
+    column :title do |p|
+      link_to p.title, post_path(p)
+    end
     column :publish
     column :published_at
     actions
