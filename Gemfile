@@ -63,4 +63,6 @@ gem 'activeadmin', github: 'gregbell/active_admin'
 gem 'devise'
 
 gem "non-stupid-digest-assets"
+gem 'paperclip'
+gem 'aws-sdk'
 
