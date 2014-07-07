@@ -22,7 +22,7 @@ ActiveAdmin.register Post do
   
   index do
     column :title do |p|
-      link_to p.title, post_path(p)
+      link_to p.title, admin_post_path(p)
     end
     column :publish
     column :published_at
