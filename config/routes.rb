@@ -57,5 +57,6 @@ Durhamchessclub::Application.routes.draw do
   #   end
   
   root 'welcome#index'
+  resources :posts, only: [:show, :index]
   get 'sample' => 'welcome#sample'
 end

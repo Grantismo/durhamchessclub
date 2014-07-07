@@ -1,0 +1,97 @@
+<!DOCTYPE HTML>
+<!--
+Twenty 1.0 by HTML5 UP
+html5up.net | @n33co
+Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+-->
+<html>
+  <head>
+    <title> NEWSLETTERS - DURHAM CHESS CLUB</title>
+    <%= render "layouts/head" %> 
+  </head>
+  <body class="no-sidebar loading">
+
+    <!-- Header -->
+    <header id="header">
+    <h1 id="logo">
+      <%= link_to(root_path) do %> 
+        DURHAM <span>CHESS CLUB</span>
+      <% end %>
+    </h1>
+    </header>
+
+    <!-- Main -->
+    <article id="main">
+    <header class="special container">
+    <span class="icon fa-book"></span>
+    <h2>ALL NEWSLETTERS</h2>
+    </header>
+
+    <section class="wrapper style3 container">
+    <% @posts.each do |post| %>
+      <h3><%= link_to(post) do %>
+          <%= post.title %> - <%= post.published_at.present? ? post.published_at.strftime("%B %Y") : "No Date Selected" %></h3>
+      <% end %>
+      <%= link_to("Read", post, class: "button special") %>
+
+      <hr />
+    <% end %>
+
+    </section>
+
+
+    </article>
+
+    <!-- Two -->
+    <section class="wrapper style1 container special">
+    <div class="row">
+      <div class="4u">
+
+        <section>
+        <span class="icon feature fa-check"></span>
+        <header>
+        <h3>All Welcome!</h3>
+        </header>
+        <p>
+        No fees.<br />
+        Sets and boards are provided.<br /> 
+        Players of all skill levels are welcome.
+
+        </p>
+        </section>
+
+      </div>
+      <div class="4u">
+
+        <section>
+        <span class="icon feature fa-clock-o"></span>
+        <header>
+        <h3>Club Hours</h3>
+        </header>
+        <p>
+        Every Saturday Afternoon <br /> 
+        2:00 pm - 4:30 pm for casual play
+        </p>
+        </section>
+
+      </div>
+      <div class="4u">
+
+        <section>
+        <span class="icon feature fa-map-marker"></span>
+        <header>
+        <h3>Location</h3>
+        </header>
+        <p>North Durham Regional Library<br />
+        221 Milton Road<br /> 
+        Durham, NC 27701 </p>
+        <a href="https://www.google.com/maps/place/Durham+County+Library+-+North+Regional+Library/@36.087825,-78.914313,17z/data=!3m1!4b1!4m2!3m1!1s0x0:0xe21ba53b1b413889" class="button">Directions</a>
+        </section>
+
+      </div>
+    </div>
+    </section>
+
+    <%= render "layouts/footer" %> 
+  </body>
+</html>
