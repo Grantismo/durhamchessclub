@@ -1,4 +1,5 @@
 class PostsController < ApplicationController
+  layout false
   respond_to :html
 
   def show
